@@ -32,7 +32,7 @@ import pygraph
 from pygraph.algorithms.generators import generate
 from pygraph.classes.exceptions import AdditionError
 from pygraph.classes.hypergraph import hypergraph
-import testlib
+from . import testlib
 from copy import copy, deepcopy
 
 class test_hypergraph(unittest.TestCase):

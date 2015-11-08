@@ -26,7 +26,7 @@ import sys
 sys.path.append('..')
 import pygraph
 import unittest
-import testlib
+from . import testlib
 import logging
 from os import listdir
 
@@ -41,7 +41,7 @@ def test_modules():
 
 def run_tests():
     for each_size in testlib.sizes:
-        print ("Testing with %s graphs" % each_size)
+        print(("Testing with %s graphs" % each_size))
         
         suite = unittest.TestSuite()
         testlib.use_size = each_size
@@ -66,7 +66,7 @@ def main():
     print ("")
     print ("--------------------------------------------------")
     print ("python-graph unit-tests")
-    print ("Random seed: %s" % testlib.random_seed)
+    print(("Random seed: %s" % testlib.random_seed))
     print ("--------------------------------------------------")
     print ("")
     run_tests()
